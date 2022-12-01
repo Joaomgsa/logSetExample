@@ -3,11 +3,11 @@ package entities;
 import java.util.Date;
 import java.util.Objects;
 
-public class logEntry {
+public class LogEntry {
     private String userName;
     private Date moment;
 
-    public logEntry(String userName, Date moment) {
+    public LogEntry(String userName, Date moment) {
         this.userName = userName;
         this.moment = moment;
     }
@@ -32,7 +32,7 @@ public class logEntry {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        logEntry logEntry = (logEntry) o;
+        LogEntry logEntry = (LogEntry) o;
         return Objects.equals(userName, logEntry.userName);
     }
 
